@@ -17,7 +17,11 @@ angular
   		templateUrl: 'views/login.html'
   	})
   	
-	
+	$stateProvider.state("shenhe",{
+  		url: '/shenhe',
+  		templateUrl: 'views/shenhe.html'
+  	})
+  	
 	
 	
 	
