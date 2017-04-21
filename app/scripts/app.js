@@ -16,10 +16,14 @@ angular
   		url: '/login',
   		templateUrl: 'views/login.html'
   	})
+  	$stateProvider.state("shouye",{
+  		url: '/shouye',
+  		templateUrl: 'views/shouye.html'
+  	})
   	
 	
 	
 	
 	
-  	$urlRouterProvider.otherwise('/login');
+  	$urlRouterProvider.otherwise('/shouye');
   }]);
