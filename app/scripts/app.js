@@ -31,16 +31,28 @@ angular
   		templateUrl: 'views/html.html'
   	})
 	
-<<<<<<< HEAD
+ 
 	$stateProvider.state("css",{
   		url: '/css',
   		templateUrl: 'views/css.html'
   	})
+	
+	
+	$stateProvider.state("js",{
+  		url: '/js',
+  		templateUrl: 'views/js.html'
+  	})
+	
+	$stateProvider.state("jq",{
+  		url: '/jq',
+  		templateUrl: 'views/jq.html'
+  	})
+	
   	$urlRouterProvider.otherwise('/login');
-=======
+
 	
 	
 	
-  	$urlRouterProvider.otherwise('/shouye');
->>>>>>> origin/master
+  	
+
   }]);

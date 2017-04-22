@@ -1,9 +1,11 @@
 angular.module('zgF4App')
 	.controller('cssCtrl', ["$scope", "$http", function($scope, $http) {
  
-    $scope.tong = false;
-		$scope.wxj = function() {
-			$scope.tong = true;
+  $scope.wxjiancss = true;
+    $scope.tongcss = false;
+		$scope.wxcss = function() {
+			$scope.tongcss = true;
+				$scope.wxjiancss=false;
 		}
 
 

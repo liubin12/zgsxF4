@@ -3,7 +3,13 @@ angular.module('zgF4App')
  
   
 
-
+$scope.wxjianht = true;
+    $scope.tonght = false;
+		$scope.wxht = function() {
+			
+			$scope.tonght = true;
+			$scope.wxjianht=false;
+		}
 
 
 
