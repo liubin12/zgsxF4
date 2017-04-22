@@ -22,8 +22,14 @@ angular
   		templateUrl: 'views/shenhe.html'
   	})
   	
+	$stateProvider.state("html",{
+  		url: '/html',
+  		templateUrl: 'views/html.html'
+  	})
 	
-	
-	
+	$stateProvider.state("css",{
+  		url: '/css',
+  		templateUrl: 'views/css.html'
+  	})
   	$urlRouterProvider.otherwise('/login');
   }]);

@@ -26,6 +26,7 @@ body{
 	
 	
 }
+
 .wxsh{
 	width: 16rem;
 	height: 4rem;
@@ -37,6 +38,7 @@ body{
 	font-weight: bold;
 	
 }
+
 .wxshnr{
 	width: 16rem;
 	height: 3.55rem;
@@ -107,6 +109,29 @@ body{
 	left: 4rem;
 	top: 1rem;
 }
+
+.wx_add{
+	width: 16rem;
+	height: 8rem;
+
+	margin-top: 1rem;
+	
+}
+.wx_add textarea{
+	width: 10rem;
+	height: 6rem;
+	margin-left: 3rem;
+	
+}
+.wxadd1{
+	width: 4rem;
+	height: 1.2rem;
+	margin-left: 10rem;
+}
+
+
+
+
 
 
 
