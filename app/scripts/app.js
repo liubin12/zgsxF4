@@ -21,9 +21,38 @@ angular
   		templateUrl: 'views/shouye.html'
   	})
   	
+	$stateProvider.state("shenhe",{
+  		url: '/shenhe',
+  		templateUrl: 'views/shenhe.html'
+  	})
+  	
+	$stateProvider.state("html",{
+  		url: '/html',
+  		templateUrl: 'views/html.html'
+  	})
+	
+ 
+	$stateProvider.state("css",{
+  		url: '/css',
+  		templateUrl: 'views/css.html'
+  	})
+	
+	
+	$stateProvider.state("js",{
+  		url: '/js',
+  		templateUrl: 'views/js.html'
+  	})
+	
+	$stateProvider.state("jq",{
+  		url: '/jq',
+  		templateUrl: 'views/jq.html'
+  	})
+	
+  	$urlRouterProvider.otherwise('/login');
+
 	
 	
 	
-	
-  	$urlRouterProvider.otherwise('/shouye');
+  	
+
   }]);
