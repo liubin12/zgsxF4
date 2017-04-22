@@ -16,6 +16,10 @@ angular
   		url: '/login',
   		templateUrl: 'views/login.html'
   	})
+  	$stateProvider.state("shouye",{
+  		url: '/shouye',
+  		templateUrl: 'views/shouye.html'
+  	})
   	
 	$stateProvider.state("shenhe",{
   		url: '/shenhe',
@@ -27,9 +31,16 @@ angular
   		templateUrl: 'views/html.html'
   	})
 	
+<<<<<<< HEAD
 	$stateProvider.state("css",{
   		url: '/css',
   		templateUrl: 'views/css.html'
   	})
   	$urlRouterProvider.otherwise('/login');
+=======
+	
+	
+	
+  	$urlRouterProvider.otherwise('/shouye');
+>>>>>>> origin/master
   }]);
