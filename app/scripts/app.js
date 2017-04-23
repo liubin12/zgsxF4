@@ -16,10 +16,11 @@ angular
   		url: '/login',
   		templateUrl: 'views/login.html'
   	})
-  	
-	
-	
-	
-	
-  	$urlRouterProvider.otherwise('/login');
+  	//注册
+  	$stateProvider.state("restiger",{
+  		url: '/restiger',
+  		templateUrl: 'views/restiger.html'
+  	})
+  	$urlRouterProvider.otherwise('/restiger');
   }]);
+
