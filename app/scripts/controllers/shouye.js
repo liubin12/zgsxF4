@@ -9,7 +9,7 @@
  */
 angular.module('zgF4App')
     .controller('shouye',['$scope','$state','$location',function(scope,$state,$location){
-    	var oDiv = document.getElementsByClassName('ul2')[0];
+    var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
    window.onscroll = function() {
@@ -68,6 +68,66 @@ window.onload = function(){
 	document.querySelector('.iphone').className += ' shown';
 }
 
-    	
+		
+		$.ajax({
+			type: "get",
+			
+			url: "http://192.168.43.116:3234/list/list",
+			
+			async: true,
+			data:{
+				'start':0
+			},
+			success: function(data) {
+				
+				console.log(data)
+				var html=''
+				for(var i = 0; i < data.length; i++) {
+					html+='<div class="neirong"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love2.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
+			}
+
+console.log(data)
+				$('.neirong1').append(html);
+			},
+			error:function(){
+				alert('error')
+			}
+		})
+		
+		$('.baba').click(function(){
+			var aa=$(this).attr("start")
+			$('.baba').css('border-bottom','#9769ff')
+			$(this).css('border-bottom','3px solid #FFF')
+			
+			$.ajax({
+			type: "get",
+			
+			url: "http://192.168.43.116:3234/list/list",
+			
+			async: true,
+			data:{
+				'start':aa
+			},
+			success: function(data) {
+				
+				console.log(data)
+				var html=''
+				for(var i = 0; i < data.length; i++) {
+					html+='<div class="neirong"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love2.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
+			}
+
+console.log(data)
+				$(".neirong1").children().remove();
+				$('.neirong1').append(html);
+			},
+			error:function(){
+				alert('error')
+			}
+		})
+		})
+
+    	$('.hedaPhoto').click(function(){
+    		$state.go("mainm")
+    	})
     	
 	}])

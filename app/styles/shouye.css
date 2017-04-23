@@ -1,5 +1,8 @@
+body{
+	font-family:"黑体","微软雅黑";
+}
 .shouye>#Neirong {
-	
+	min-height: 100vh;
   position:relative;
   z-index: 1;
 background: #FFFFFF;
@@ -93,6 +96,7 @@ background: #FFFFFF;
 	line-height: 1.8rem;
 	color: #fff;
 	font-size: 0.8rem;
+	transition:0.6s; 
 }
 
 .shouye>#Neirong>header>.ul2>.ul1>li:first-child {
@@ -101,9 +105,9 @@ background: #FFFFFF;
 }
 
 .shouye>#Neirong>header>.ul2>.ul1>li:hover {
-	border: 1px solid #FFFF00;
+	border: 1px solid #9769ff;
 	color: #FFFFFF;
-	-webkit-box-shadow: 0.1rem 0.1rem 0.5rem #fff;
+	
 }
 
 .shouye>#Neirong>header>.push {
@@ -121,7 +125,7 @@ background: #FFFFFF;
 	-webkit-box-shadow: 0.1rem 0.1rem 0.5rem #CCCCCC;
 }
 
-.shouye>#Neirong>.ul2>.neirong {
+.shouye>#Neirong>.ul2>.neirong1>.neirong {
 	height: 300px;
 	overflow: hidden;
 	width: 100%;
@@ -136,19 +140,19 @@ background: #FFFFFF;
 	margin-top:0rem;
 	
 }
-.shouye>#Neirong>.neirong{
+.shouye>#Neirong>.neirong1>.neirong{
 	margin-top: 1rem;
 	background:#FAFAFA;
 	padding-bottom: 0.6rem;
 }
-.shouye>#Neirong>.neirong>.nr_1{
+.shouye>#Neirong>.neirong1>.neirong>.nr_1{
 	width: 16rem;
 	height: auto;
 	padding:0.3rem 1rem 0 1rem;
 	background:#FAFAFA;
 	
 }
-.shouye>#Neirong>.neirong>.nr_1>b{
+.shouye>#Neirong>.neirong1>.neirong>.nr_1>b{
 	font-size: 1rem;
 	color: #A668FD;
 	width: auto;
@@ -156,7 +160,7 @@ background: #FFFFFF;
 	float: left;
 	
 }
-.shouye>#Neirong>.neirong>.nr_1>b:first-child{
+.shouye>#Neirong>.neirong1>.neirong>.nr_1>b:first-child{
 	font-size: 0.8rem;
 	color: #A668FD;
 	width: 60%;
@@ -191,12 +195,12 @@ background: #FFFFFF;
 	font-weight: 500;
 	color: #CCCCCC;
 }
-.shouye>#Neirong>.neirong>.nr_1>b:nth-child(2){
+.shouye>#Neirong>.neirong1>.neirong>.nr_1>b:nth-child(2){
 	float: right;
 	border: 0px;
 	margin-right: 0rem;
 }
-.shouye>#Neirong>.neirong>.nr_1>b:nth-child(2)>img{
+.shouye>#Neirong>.neirong1>.neirong>.nr_1>b:nth-child(2)>img{
 	width: 20px;
 	height: 20px;
 	margin-left: 0.3rem;
@@ -206,7 +210,7 @@ background: #FFFFFF;
 	clear: both;
 	line-height: 1.2rem;
 	font-size: 0.6rem;
-	color: #7f838d;
+	color: #000;
 	background: #FAFAFA;
 	width: 100%;
 	height: auto;
@@ -640,6 +644,17 @@ body {
 }
 #mmy{
 	transition:1s; 
+}
+.shouye h2{
+	
+	width: 10rem;
+	height: 3rem;
+	color: #2A2D2F;
+	line-height: 3rem;
+	font-size: 0.7rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2rem;
 }
 
 
