@@ -35,7 +35,7 @@ body{
 .wxsh h2{
 	font-size: 2rem;
 	font-weight: bold;
-	
+	line-height: 4rem;
 }
 .wxshnr{
 	width: 16rem;
@@ -43,8 +43,8 @@ body{
 	border-bottom: 1px solid #CCCCCC;
 }
 .wxshnr img{
-	width: 2rem;
-	height: 2rem;
+	width: 2.75rem;
+	height:  2.75rem;
 	float: left;
 	margin: 0.4rem 0 0 0.5rem;
 	
@@ -53,13 +53,13 @@ body{
 }
 
 .wxshnr_c{
-	width: 7rem;
+	width: 6.25rem;
 	height: 3.55rem;
 	float: left;
 	margin-left: 0.5rem;
 }
 .wxshnr_c top{
-	width: 7rem;
+	width: 6.25rem;
 	height: 2rem;
 	text-align: center;
 	display: block;
@@ -68,7 +68,7 @@ body{
 	
 }
 .wxshnr_c p{
-	width: 7rem;
+	width: 6.25rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
 	text-align: center;

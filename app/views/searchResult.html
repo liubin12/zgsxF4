@@ -1,0 +1,106 @@
+
+		<div class="wxsbox" ng-controller="sszsCtrl">
+		<header>
+			<article><a href="sousuo.html"><</a> </article>
+			<input type="search" id="suo" placeholder=""/>
+			<i class="icon-cart"></i>
+			<a href="javascript:;">
+				<i class="icon-list2"></i>
+				<p>类目</p>
+			</a>
+		</header>
+		
+		<section class="nav">
+			<ul>
+				<a href="javascript:;" id="allPX"><li>综合</li></a>
+				<a href="javascript:;" id="xiaoliang"><li>销量</li></a>
+				<a href="javascript:;" id="priceJG"><li>价格</li></a>
+				<a href="javascript:;"><li>筛选</li></a>
+			</ul>
+		</section>
+		
+		<section class="commodity">
+			
+			
+			
+			
+			
+		</section>
+		</div>
+	
+	<!--<script>
+		
+		$('#suo').val(localStorage.sou);
+		$.ajax({
+				type: "post",
+				url: "http://192.168.1.100/supermarket/data/getcommditybykw.php",
+				async: true,
+				data: {'kw': localStorage.sou},
+				dataType: 'jsonp', //使用jsop开始跨域
+				jsonp: 'callback', //告诉后台，我需要一个回调函数
+				jsonpCallback: "success_jsonpCallback", //回调函数的名称
+				success: function(data) {
+					//debugger;
+//           $('#suo').val(localStorage.sou);
+            arr = data;
+			var jia = "";
+             for(var i=0;i<data.length;i++){
+            var jia='<section><a href="../1603B-taobao/shangpin.html?id='+data[i].id+'"><img src="'+'http://192.168.1.100/supermarket/img/'+data[i].img +'"/></a><content><article id="commName">'+												
+			data[i].name+'</article><count>月销 <span id="sales">'+ 
+			data[i].count +'</span>笔</count><price id="price">¥'+
+			data[i].price+'</price><a href="javascript:;"><i class="icon-cart"></i></a></content></section>';    
+                $(".commodity").append(jia)            		       	               	
+              }     
+				},
+				error: function(data) {}
+		})
+		
+		
+		
+		var arr = [],
+		shuzu = true;
+		
+		
+	$("#xiaoliang").bind("click",function(){		
+		arr.sort(function(a,b){
+				if(shuzu){
+					return a.count - b.count;
+				}else{
+					return b.count - a.count;
+				}
+			})
+			souS();
+			shuzu = !shuzu;
+		})
+		
+		
+		
+		
+		$("#priceJG").bind("click",function(){		
+		    arr.sort(function(a,b){		
+		if(shuzu){
+			return a.price - b.price;			
+		}else{
+			return b.price - a.price;
+		}			
+		})
+		souS();
+		shuzu =! shuzu;
+		})		
+		
+		function souS(){
+			var jia = "";
+			for(var i=0; i<arr.length; i++){
+				jia += '<section><a href="../1603B-taobao/shangpin.html?id='+arr[i].id+
+				'"><img src="'+'http://192.168.1.100/supermarket/img/'+
+				arr[i].img +'"/></a><content><article id="commName">'+
+				arr[i].name+'</article><count>月销 <span id="sales">'+ 
+				arr[i].count +'</span>笔</count><price id="price">¥'+
+				arr[i].price+'</price><a href="javascript:;"><i class="icon-cart"></i></a></content></section>';
+			}
+			$('.commodity').html(jia);
+		}
+		
+		
+	</script>-->
+

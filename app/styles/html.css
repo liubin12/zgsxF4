@@ -45,8 +45,8 @@ body{
 	border-bottom: 1px solid #CCCCCC;
 }
 .wxhtshnr img{
-	width: 2rem;
-	height: 2rem;
+	width: 2.75rem;
+	height: 2.75rem;
 	float: left;
 	margin: 0.4rem 0 0 0.5rem;
 	
@@ -55,13 +55,13 @@ body{
 }
 
 .wxhtshnr_c{
-	width: 7rem;
+	width: 6.25rem;
 	height: 3.55rem;
 	float: left;
 	margin-left: 0.5rem;
 }
 .wxhtshnr_c top{
-	width: 7rem;
+	width: 6.25rem;
 	height: 2rem;
 	text-align: center;
 	display: block;
@@ -70,7 +70,7 @@ body{
 	
 }
 .wxhtshnr_c p{
-	width: 7rem;
+	width: 6.25rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
 	text-align: center;
@@ -114,16 +114,25 @@ width: 1.8rem;
 
 .wxht_add{
 	width: 16rem;
-	height: 8rem;
+	height: 10rem;
 
 	margin-top: 1rem;
 	
+}
+.wxht_add input{
+	width: 10rem;
+	height: 2rem;
+	margin-left: 3rem;
+	margin-top: 1rem;
+	border: 1px solid #CCCCCC;
+	text-indent: 0.2rem;
+	line-height: 2rem;
 }
 .wxht_add textarea{
 	width: 10rem;
 	height: 6rem;
 	margin-left: 3rem;
-	
+	margin-top: 1rem;
 }
 .wxhtadd1{
 	width: 4rem;
