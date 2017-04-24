@@ -16,23 +16,17 @@ $("#right").click(function(){
 			$.ajax({
 				type:"get",
 				  url:'http://192.168.43.116:3234/list/search',
-
 				async:true,
 				data:{
-
-					title:$("#sousuo").val()
-             
-				
+					title:$("#sousuo").val()            				
 				},
 				success:function(e){
 					console.log(e)
 					var aaaa="";
 					for (var i=0;i<e.length;i++) {
 						aaaa+='<img src="../favicon.ico" /><div class="sszs_c"><top>'+e[i].title+'</top><p>'+e[i].content+'</p></div>'
-	
 					}
-					$(".sszs").append(aaaa)
-					
+					$(".sszs").append(aaaa)					
 				},
 				error:function(e){
 					

@@ -8,12 +8,8 @@ angular.module('zgF4App')
 			$scope.wxjianxs=false;
 		}
 
-//$scope.dian = function() {
-//			
-//			$scope.tong = false;
-//			$scope.wxjianxs = true;
-//		}
 
+     
 
 
 

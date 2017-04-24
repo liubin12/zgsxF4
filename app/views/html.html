@@ -2,44 +2,27 @@
 
 
 <div class="wxht_box" ng-controller="htmlCtrl">
-	<div class="wxhttop">
-			<img src="../images/wxtop.jpg" />		
-		</div>
-	
-	<div class="wxhtsh">				
-				<h2>html</h2>							
-			</div>	
-	
-	<div class="wxhtshnr">
-		<img src="../favicon.ico" />	
-		<div class="wxhtshnr_c">
-			<top>html</top>
-			<p>sffgggg</p>
-		</div>
-			
-				<div class="wxhtshnr_l">					
-				
-				<div class="wxhtqq" ng-show="tonght">
-				<button>通过</button>	
-				<button>未通过</button>	
-				<button>详情</button>			
-					</div>
-				<p class="wxhtjian" ng-click="wxht()" ng-show="wxjianht">></p>
-					
-				</div>
-			
-			</div>
+	<div class="wxboxfb">
+		<a><</a>
+		<p id="wxfb">发表</p>
+	</div>
 	
 	
 	
 	
 	<div class="wxht_add">
+		<select class="wxsel">
+			<option value="1" name="c">html</option>
+			<option value="2" name="c">css</option>
+			<option value="3" name="c">js</option>
+			<option value="4" name="c">jq</option>
+		</select>
 		
-		<input type="text" />
-		<textarea>
+		<input type="text" id="biao"/>
+		<textarea id="nei">
 			
 		</textarea>
-		<button class="wxhtadd1">添加</button>
+		
 		
 	</div>
 	
