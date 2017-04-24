@@ -56,17 +56,32 @@ angular
   		templateUrl: 'views/jq.html'
   	})
 	
+
+	
+	$stateProvider.state("sousuo",{
+  		url: '/sousuo',
+  		templateUrl: 'views/sousuo.html'
+  	})
+	$stateProvider.state("searchResult",{
+  		url: '/searchResult',
+  		templateUrl: 'views/searchResult.html'
+  	})
+	
+	
+
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
   	})
 	
+
   	$urlRouterProvider.otherwise('/login');
 
 	
 	
 	
   	
+
 
   }]);
 

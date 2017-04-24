@@ -1,0 +1,143 @@
+
+		
+		<div class="box_ss" ng-controller="sousuoCtrl">
+		
+		
+		<top>
+		<a href="javascript"><p>＜</p></a>	
+		<input type="search" placeholder="请输入搜索内容"  id="sousuo"/>
+		<p id="right">搜索</p>	
+		</top>	
+			
+			<sousuo>
+			<i class="icon-search"></i>	
+			<p>最近搜索</p>
+			<span id="shan">删除</span>
+			</sousuo>
+			
+		<center id="lishi">
+		<p></p>	
+		
+		</center>	
+			
+			
+		
+		   <remen>
+			<i><img src="../images/huo.jpg"></i>	
+			<p>热门搜索</p>				
+			</remen>
+		
+		<ul id="lei" ng-click="lei()">
+			<li><a>html</a></li>
+			<li><a>js</a></li>
+			<li><a>jq</a></li>
+			<li><a>angular</a></li>
+			<li><a>css</a></li>
+			<li><a>vue</a></li>
+			<li><a>node</a></li>
+		
+			
+		</ul>
+		
+		
+		
+		<div class="sszs">			
+		<!--<img src="../favicon.ico" />	
+		<div class="sszs_c">
+			<top>html</top>
+			<p>sffgggg111111111111111111111111111111
+				
+			</p>
+		</div>-->
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>		
+	
+	
+	<!--<script type="text/javascript">		
+		
+		$("#lei>li").click(function(){
+			$("#sousuo").val($(this).text())
+		
+		})
+		
+		
+		
+		
+		
+		$("#shan").bind('click',function(){
+			$('#lishi').html("<p>暂无搜索历史</p>");
+			localStorage.his = "";
+		})
+	
+	
+	
+		
+		var His = localStorage.his;
+		if(His){
+			$('#lishi p').hide();
+			var jilv = His.split(',');
+			for(var i=0; i<jilv.length-1; i++){
+				$('#lishi').prepend('<span>'+ jilv[i] +'</span>');
+			}
+		}else{
+			$('#lishi').html('<p>暂无搜索历史</p>');
+		}	
+		
+		
+		
+		
+		//按搜索框内容搜索商品
+		$('#right').bind('click',function(){
+			if($('#sousuo').val() == ''){
+				$('#sousuo').val("请输入商品")
+			}else{
+				$.ajax({
+					type: "post",
+					url: "http://192.168.1.100/supermarket/data/getcommditybykw.php",
+					async: true,
+					data: {
+						'kw': $('#sousuo').val()
+					},
+					dataType: "jsonp", //使用jsop开始跨域
+					jsonp: "callback", //告诉后台，我需要一个回调函数
+					jsonpCallback: "success_jsonpCallback", //回调函数的名称
+					success: function(data) {
+						//debugger;
+						if(data == ''){
+							$('#sousuo').val('未搜索到商品!');
+						}else{
+							if(localStorage.his){
+									
+		                 localStorage.his += $('#sousuo').val() + ',';
+							}else{
+							localStorage.his = $('#sousuo').val() + ',';
+							}    
+							localStorage.sou = $('#sousuo').val();
+							window.location.href = 'searchResult.html';
+						}
+						
+					},
+					error: function(data) {}
+				})
+			}
+		})
+		
+	</script>-->
+	
+	
+	
+	
+	
+
