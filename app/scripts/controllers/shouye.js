@@ -80,10 +80,10 @@ window.onload = function(){
 			},
 			success: function(data) {
 				
-				console.log(data)
+				console.log(data[1].love)
 				var html=''
 				for(var i = 0; i < data.length; i++) {
-					html+='<div class="neirong"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love2.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
+					html+='<div class="neirong" aa="'+data[i].id+'"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love+'.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
 			}
 
 console.log(data)
@@ -110,10 +110,10 @@ console.log(data)
 			},
 			success: function(data) {
 				
-				console.log(data)
+				console.log(data[0].id)
 				var html=''
 				for(var i = 0; i < data.length; i++) {
-					html+='<div class="neirong"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love2.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
+					html+='<div class="neirong" aa="'+data[i].id+'"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love+'.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p></div></div></div>'
 			}
 
 console.log(data)
@@ -136,6 +136,22 @@ console.log(data)
 			
 
 		})
+    	
+    	
+    	$('.neirong1').delegate(".neirong","click",function(){
+    		var id=$(this).attr("aa");
+    		alert(id)
+    	})
+    	
+		
+	
+				
+			
+		
+			
+		scope.user=localStorage.username
+		
+		
     	
     	
 	}])

@@ -7,7 +7,7 @@ body{
 	width: 100%;
 	height: 100%;
 }
-.box{
+.wxbox{
 	width: 16rem;
 	
 	margin: 0 auto;
@@ -33,46 +33,51 @@ body{
 	line-height: 4rem;
 }
 .wxsh h2{
-	font-size: 2rem;
+	font-size: 1.3rem;
 	font-weight: bold;
-	
+	line-height: 4rem;
 }
 .wxshnr{
 	width: 16rem;
-	height: 3.55rem;
-	border-bottom: 1px solid #CCCCCC;
+	height: 4rem;
+	
 }
 .wxshnr img{
-	width: 2rem;
-	height: 2rem;
+	width: 2.75rem;
+	height:  2.75rem;
 	float: left;
-	margin: 0.4rem 0 0 0.5rem;
-	
+	margin: 0.6rem 0 0 0.5rem;
 	border-radius: 50%;
 	border: 1px solid #CCCCCC;
+	
 }
 
 .wxshnr_c{
-	width: 7rem;
+	width: 6.25rem;
 	height: 3.55rem;
 	float: left;
 	margin-left: 0.5rem;
 }
 .wxshnr_c top{
-	width: 7rem;
+	width: 6.25rem;
 	height: 2rem;
 	text-align: center;
 	display: block;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 2rem;
-	
+	text-overflow: ellipsis;	
+	white-space: nowrap;
+		overflow: hidden;
 }
-.wxshnr_c p{
-	width: 7rem;
+.wxshnr_c span{
+	display: block;
+	width: 6.25rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
-	text-align: center;
-	
+	text-overflow: ellipsis;	
+	white-space: nowrap;
+ overflow: hidden;
+ font-size: 0.8rem;
 }
 
 .wxshnr_l{
@@ -89,18 +94,21 @@ body{
 	position: absolute;
 	top: 0.3rem;
 	left: 0;
-	
+	display: none;
 }
-.wxqq button{
+.wxqq a{
 	width: 1.8rem;
 	height: 3rem;
+	
 	border:0;	
 	padding:0;	
 	text-align: center;
 	float: left;
-	background: red;
-	/*line-height: 0.5rem;
-	margin-top: 0.1rem;*/
+	background: blue;
+	line-height: 2.7rem;
+	/*margin-top: 0.1rem;*/
+	margin-top: 0.3rem;
+	cursor: pointer;
 }
 .wxjian{
 	width: 1rem;
@@ -109,7 +117,7 @@ body{
 	font-size: 1rem;
 	color: #CCCCCC;
 	position: absolute;
-	left: 4rem;
+	left: 4.5rem;
 	top: 1rem;
 }
 

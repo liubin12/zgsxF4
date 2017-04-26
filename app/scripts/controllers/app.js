@@ -55,6 +55,23 @@ angular
   		url: '/jq',
   		templateUrl: 'views/jq.html'
   	})
+<<<<<<< HEAD:app/scripts/app.js
+=======
+	
+
+	
+	$stateProvider.state("sousuo",{
+  		url: '/sousuo',
+  		templateUrl: 'views/sousuo.html'
+  	})
+	$stateProvider.state("searchResult",{
+  		url: '/searchResult',
+  		templateUrl: 'views/searchResult.html'
+  	})
+	
+	
+
+>>>>>>> origin/master:app/scripts/controllers/app.js
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
@@ -64,11 +81,18 @@ angular
   		templateUrl: 'views/grxg.html'
   	})
 	
+
   	$urlRouterProvider.otherwise('/login');
 
 	
 	
 	
+<<<<<<< HEAD:app/scripts/app.js
  
+=======
+  	
+
+
+>>>>>>> origin/master:app/scripts/controllers/app.js
   }]);
 
