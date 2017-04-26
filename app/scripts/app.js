@@ -16,14 +16,14 @@ angular
   		url: '/login',
   		templateUrl: 'views/login.html'
   	})
-<<<<<<< HEAD
+
   	//注册
   	$stateProvider.state("restiger",{
   		url: '/restiger',
   		templateUrl: 'views/restiger.html'
   	})
   	$urlRouterProvider.otherwise('/restiger');
-=======
+
   	$stateProvider.state("shouye",{
   		url: '/shouye',
   		templateUrl: 'views/shouye.html'
@@ -55,10 +55,13 @@ angular
   		url: '/jq',
   		templateUrl: 'views/jq.html'
   	})
-	
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
+  	})
+	$stateProvider.state("grxg",{
+  		url: '/grxg',
+  		templateUrl: 'views/grxg.html'
   	})
 	
   	$urlRouterProvider.otherwise('/login');
@@ -66,8 +69,6 @@ angular
 	
 	
 	
-  	
-
->>>>>>> origin/master
+ 
   }]);
 
