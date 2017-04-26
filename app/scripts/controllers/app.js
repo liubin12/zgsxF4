@@ -55,6 +55,8 @@ angular
   		url: '/jq',
   		templateUrl: 'views/jq.html'
   	})
+<<<<<<< HEAD:app/scripts/app.js
+=======
 	
 
 	
@@ -69,9 +71,14 @@ angular
 	
 	
 
+>>>>>>> origin/master:app/scripts/controllers/app.js
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
+  	})
+	$stateProvider.state("grxg",{
+  		url: '/grxg',
+  		templateUrl: 'views/grxg.html'
   	})
 	
 	
@@ -81,8 +88,12 @@ angular
 	
 	
 	
+<<<<<<< HEAD:app/scripts/app.js
+ 
+=======
   	
 
 
+>>>>>>> origin/master:app/scripts/controllers/app.js
   }]);
 

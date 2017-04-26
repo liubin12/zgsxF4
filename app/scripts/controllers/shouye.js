@@ -129,9 +129,17 @@ console.log(data)
 		})
 		})
 
-    	$('.hedaPhoto').click(function(){
-    		$state.go("mainm")
-    	})
+    	/*$('.hedaPhoto').click(function(){
+    		$state.go("grxg");
+    	})*/
+    	$('body').delegate('.hedaPhoto','click',function(){
+			//alert(1);
+			url:'http://192.168.43.116:3234/xiugai/lists',
+			type:'get',
+			
+
+		})
+    	
     	
     	$('.neirong1').delegate(".neirong","click",function(){
     		var id=$(this).attr("aa");

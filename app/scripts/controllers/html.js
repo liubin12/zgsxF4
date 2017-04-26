@@ -23,7 +23,7 @@ $("#wxfb").click(function(){
 			title:$("#biao").val(),
 			content:$("#nei").val(),
 			start:opt,
-			alla:0,
+			alla:1,
 			love:0
 		},
 		success:function(e){
@@ -35,9 +35,7 @@ $("#wxfb").click(function(){
 			
 		}				
 	});
-	
-	
-	
+
 })
 
 

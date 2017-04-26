@@ -26,7 +26,7 @@ angular.module('zgF4App')
              }
              else
              {
-            	$('.Y_xp').html('失败');
+            	$('.Y_xp').html('汉字或者英文');
              }
          }
 		 
@@ -48,7 +48,7 @@ angular.module('zgF4App')
              }
              else
              {
-            	$('.Y_p_xp').html('失败');
+            	$('.Y_p_xp').html('最少在8位');
              }
          }
 		 
@@ -70,7 +70,7 @@ angular.module('zgF4App')
              }
              else
              {
-            	$('.Y_e_xp').html('失败');
+            	$('.Y_e_xp').html('使用QQ邮箱');
              }
          }
 		 
@@ -92,7 +92,7 @@ angular.module('zgF4App')
              }
              else
              {
-            	$('.Y_t_xp').html('失败');
+            	$('.Y_t_xp').html('正确的手机号');
              }
          }
 		 
@@ -114,7 +114,7 @@ angular.module('zgF4App')
              }
              else
              {
-            	$('.Y_e_nc').html('失败');
+            	$('.Y_e_nc').html('数字和英文组成');
              }
          }
 		 
@@ -131,7 +131,6 @@ angular.module('zgF4App')
 	 };
 	 
 	 $("#load").click(function(){
-		 
 		 var user = $('#user').val();
 		 var pass = $('#pass').val();
 		 var email = $('#email').val();
@@ -152,7 +151,7 @@ angular.module('zgF4App')
  				console.log(e);
  				if(e.flag==1){
  				   alert('成功注册');
- 				   $state.go();
+ 				   $state.go('shouye');
  				}else if(e.flag==2){
  				   alert('用户名重复');
  				}else if(e.flag==3){
