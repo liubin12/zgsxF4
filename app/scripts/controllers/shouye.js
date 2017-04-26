@@ -76,7 +76,8 @@ window.onload = function(){
 			
 			async: true,
 			data:{
-				'start':0
+				'start':0,
+				'alla':0
 			},
 			success: function(data) {
 				
@@ -95,7 +96,8 @@ console.log(data)
 		})
 		
 		$('.baba').click(function(){
-			var aa=$(this).attr("start")
+			
+			
 			$('.baba').css('border-bottom','#9769ff')
 			$(this).css('border-bottom','3px solid #FFF')
 			
@@ -106,7 +108,8 @@ console.log(data)
 			
 			async: true,
 			data:{
-				'start':aa
+				'start':aa,
+				'alla':0
 			},
 			success: function(data) {
 				
@@ -133,6 +136,9 @@ console.log(data)
     	$('.neirong1').delegate(".neirong","click",function(){
     		var id=$(this).attr("aa");
     		alert(id)
+    		localStorage.setItem('id',id);  
+    		
+    		$state.go('mainm')
     	})
     	
 		
