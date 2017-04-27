@@ -151,7 +151,7 @@ angular.module('zgF4App')
  				console.log(e);
  				if(e.flag==1){
  				   alert('成功注册');
- 				   $state.go('shouye');
+ 				   $state.go('login');
  				}else if(e.flag==2){
  				   alert('用户名重复');
  				}else if(e.flag==3){
