@@ -80,9 +80,21 @@ angular
   		templateUrl: 'views/grxg.html'
   	})
 	
+	
 
   	$urlRouterProvider.otherwise('/login');
 
 	
+<<<<<<< HEAD
+=======
+	
+	
+
+ 
+
+
+
+
+>>>>>>> origin/master
   }]);
 

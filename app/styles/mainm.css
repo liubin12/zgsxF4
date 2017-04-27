@@ -1,0 +1,124 @@
+body{
+	font-family:"黑体","微软雅黑";
+}
+.mainm header{
+	
+}
+.mainm>header {
+	background: url(../images/LZW_bj.jpg) 100%;
+	height: 5rem;
+	width: inherit;
+	clear: both;
+	margin-bottom: 0.2rem;
+	-webkit-box-shadow: 0rem 0.1rem 0.5rem #000;
+}
+
+.mainm>header>h1 {
+	margin: 0;
+	padding-top: 0.4rem;
+	text-align: center;
+	margin-left: 3.2rem;
+	float: left;
+}
+
+.mainm>header>h1>img {
+	margin: 0;
+	padding-top: 0rem;
+	height: 1.8rem;
+	width: auto;
+	float: left;
+}
+
+.mainm>header>.main {
+	margin: 0;
+	padding-top: 1.2rem;
+	height: 2rem;
+	width: 2rem;
+	color: #FFFFFF;
+	margin-left: 1rem;
+	margin-top: 0rem;
+	float: left;
+}
+
+.mainm>header>.main img {
+	width: 40%;
+	-----webkit-box-shadow: 0.1rem 0.1rem #444;
+}
+
+.mainm>header>.input {
+	width: auto;
+	float: right;
+	height: 2rem;
+}
+
+.mainm>header>.input>img {
+	margin-top: 1rem;
+	width: 70%;
+}
+
+
+.lzw_zhangbi{
+	width: 100%;
+	height: 2rem;
+	line-height: 1rem;
+	background:#FAFAFA;
+	padding: 0.5rem 4%;
+}
+.lzw_zhangbi>span{
+	float: left;
+	width: 50%;
+	font-size: 0.7rem;
+}
+.lzw_zhangbi>span:first-child{
+	
+	
+	font-weight: 500;
+	color: #8424EF;
+}
+.lzw_zhangbi>span:nth-child(2){
+	text-align: right;
+	
+	font-weight: 500;
+	color: #CCCCCC;
+}
+
+.mainm .neirong1>.neirong{
+	margin-top: 1rem;
+	background:#FAFAFA;
+	padding-bottom: 0.6rem;
+}
+.mainm .neirong1>.neirong>.nr_1{
+	width: 16rem;
+	height: auto;
+	padding:0.3rem 1rem 0 1rem;
+	background:#FAFAFA;
+	
+}
+.mainm .neirong1>.neirong>.nr_1>b{
+	font-size: 1rem;
+	color: #A668FD;
+	width: auto;
+	--border-bottom: 1px #A668FD solid;	
+	float: left;
+	
+}
+.mainm .neirong1>.neirong>.nr_1>b:nth-child(2){
+	font-size: 1rem;
+	color: #A668FD;
+	width: auto;
+	--border-bottom: 1px #A668FD solid;	
+	float: right;
+	
+	
+}
+.mainm .neirong1>.neirong>.nr_1>b:first-child{
+	font-size: 0.8rem;
+	color: #A668FD;
+	width: 60%;
+	/*border-bottom: 1px #A668FD solid;	*/
+	float: left;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
