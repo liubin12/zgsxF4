@@ -108,7 +108,7 @@ console.log(data)
 			}
 		})
 		
-	
+
 		
 		$('.baba').click(function(){
 			
@@ -162,7 +162,7 @@ console.log(data)
     		$state.go('mainm')
     	})
     	
-		
+
 	
 				
 			

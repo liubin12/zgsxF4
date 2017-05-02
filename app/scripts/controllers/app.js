@@ -92,10 +92,12 @@ angular
   	$urlRouterProvider.otherwise('/shouye2');
 
 	
+
 	
 	
 
  
+
 
 
 

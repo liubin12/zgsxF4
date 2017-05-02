@@ -1,5 +1,5 @@
 angular.module('zgF4App')
-	.controller('htmlCtrl', ["$scope", "$http", function($scope, $http) {
+	.controller('htmlCtrl', ["$scope", "$http","$state", function($scope, $http,$state) {
  
   
 
@@ -20,15 +20,15 @@ $("#wxfb").click(function(){
     url:'http://192.168.43.116:3234/release/release',
 		async:true,
 		data:{
-			title:$("#biao").val(),
-			content:$("#nei").val(),
-			start:opt,
-			alla:1,
-			love:0
+			titl:$("#biao").val(),
+			conten:$("#nei").val(),
+			star:opt,
+			allaaa:1,
+			lov:0
 		},
 		success:function(e){
 			alert("cg")
-			
+			$state.go('shenhe')
 		},
 		error:function(e){
 			alert("sb")
