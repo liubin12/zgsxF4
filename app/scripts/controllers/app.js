@@ -85,8 +85,7 @@ angular
   	$urlRouterProvider.otherwise('/login');
 
 	
-<<<<<<< HEAD
-=======
+
 	
 	
 
@@ -95,6 +94,6 @@ angular
 
 
 
->>>>>>> origin/master
+
   }]);
 

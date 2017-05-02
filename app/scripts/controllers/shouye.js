@@ -95,21 +95,7 @@ console.log(data)
 			}
 		})
 		
-		一.html5为什么开头申明doctype html
-		主要原因为html5中只有一个文档类型，就是html，而不像html 4.01或xhtml1.0还有多个文档类型。
-		二:盒模型  ie谷歌兼容问题
-			内容 padding border margin
-		三、HTML5 存储类型有什么区别？
-	HTML5 能够本地存储数据，在之前都是使用 cookies 使用的。HTML5 提供了下面两种本地存储方案：
-	localStorage 用于持久化的本地存储，数据永远不会过期，关闭浏览器也不会丢失。
-	sessionStorage 同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。
-	因此sessionStorage不是一种持久化的本地存储，	仅仅是会话级别的存储
-		四, js window.onload() 事件和 jQuery ready 函数有何不同？
-onload DOM 被创建还要等到包括大型图片、音频、视频在内的所有外部资源都完全加载。缺点可能有延迟
-另一方面，jQuery ready() 函数只需对 DOM 树的等待，而无需对图像或外部资源加载的等待，从而 执行起来更快
-ready()多次使用它，顺序执行  onload 技术而言，只能在单一函数里 使用。
-	 五,让一个盒子水平垂直居中
-	 	子集absolute绝对
+		
 		
 		
 		$('.baba').click(function(){
