@@ -29,6 +29,11 @@ angular
   		templateUrl: 'views/shouye.html'
   	})
   	
+  		$stateProvider.state("shouye2",{
+  		url: '/shouye2',
+  		templateUrl: 'views/shouye2.html'
+  	})
+  	
 	$stateProvider.state("shenhe",{
   		url: '/shenhe',
   		templateUrl: 'views/shenhe.html'
@@ -50,6 +55,8 @@ angular
   		url: '/js',
   		templateUrl: 'views/js.html'
   	})
+	
+
 	
 	$stateProvider.state("jq",{
   		url: '/jq',
@@ -82,7 +89,7 @@ angular
 	
 	
 
-  	$urlRouterProvider.otherwise('/login');
+  	$urlRouterProvider.otherwise('/shouye2');
 
 	
 	
