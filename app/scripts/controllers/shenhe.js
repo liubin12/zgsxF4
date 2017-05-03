@@ -29,7 +29,7 @@ $.ajax({
 	$(".wxjian").eq(bb).css("display","none");
 
 })
-		
+		//删除 未通过
 		 $(".dell").click(function(){					
 			var id=$(this).attr("del");
 					
@@ -66,37 +66,20 @@ $.ajax({
 			alert("errpr!")
 				}
 		});
-////////////////////////
-   $("body").delegate('#wxxiangq','click',function(){
-   	    id=$(this).attr('xiang');	   
-   	$.ajax({
-   	type:"get",
-   	 url:'http://192.168.43.116:3234/xiugai/lists',
-   	async:true,
-   	data:{
-   		'alla':1,
-   		'id':id
-   	},
-   	success:function(e){
-   			alert('cg')
-   			$state.go('shouye')
-   	},
-	error:function(e){
-   	alert('sb')
-		
-   	}
-   		})
-   }) 
+////////////////////////详情
+
+$("body").delegate('#wxxiangq','click',function(){
+             alert("111")
+    		var id=$(this).attr("xiang");
+  
+    		localStorage.setItem('xiang',id)
+    		
+    		
+    		$state.go('mainm')
+    	})
 
 
-//	$("body").delegate('#wxxiangq','click',function(){
-//	    id=$(this).attr('xiang')		
-//			$state.go('shouye')
-//		})
-
-
-
-/////////////////
+/////////////////通过
 $("body").delegate('#wxxtongg','click',function(){
  id=$(this).attr('ee')	 
 $.ajax({
@@ -112,7 +95,7 @@ $.ajax({
 		$state.go('shouye')
 			location.reload()
 			
-			//location.href='shouye.html';
+			
 	},
 	error:function(e){
 	alert('sb')
