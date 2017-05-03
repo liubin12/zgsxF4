@@ -89,7 +89,7 @@ angular
 	
 	
 
-  	$urlRouterProvider.otherwise('/shouye2');
+  	$urlRouterProvider.otherwise('/shouye');
 
 	
 
