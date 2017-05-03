@@ -27,7 +27,16 @@ $("#wxfb").click(function(){
 			lov:0
 		},
 		success:function(e){
-			alert("cg")
+			
+			
+		$("#zhezhao").show();
+			$("#zhezhao p").html("发布成功")		 	 
+						setTimeout(function(){
+							$("#zhezhao").hide();
+								},2000) 
+			
+		
+			
 			$state.go('shenhe')
 		},
 		error:function(e){
@@ -40,6 +49,9 @@ $("#wxfb").click(function(){
 
 
 
-
+ $(".shangyige").click(function(){
+				window.history.back(-1);
+			})
+			 
 
 }]);

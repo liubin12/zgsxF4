@@ -148,6 +148,11 @@ angular.module('zgF4App')
  				"start":0
  			},
  			success:function(e){
+ 				localStorage.setItem('username',e.result[0].username);
+        		localStorage.setItem('password',e.result[0].password); 
+        		localStorage.setItem('email',e.result[0].username);
+        		localStorage.setItem('nick',e.result[0].password); 
+        		localStorage.setItem('tel',e.result[0].password); 
  				console.log(e);
  				if(e.flag==1){
  				   alert('成功注册');

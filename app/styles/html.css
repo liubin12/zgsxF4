@@ -11,7 +11,7 @@ body{
 	width: 16rem;
 	
 	margin: 0 auto;
-	
+	position: relative;
 }
 
 .wxboxfb{
@@ -74,7 +74,18 @@ body{
 	margin-left: 10rem;
 }
 
-
+#zhezhao{
+	width: 12rem;
+	height: 1.5rem;
+	position: absolute;
+ bottom: -9rem;
+left: 2rem;
+background: #999999;
+display:none;
+text-align: center;
+line-height: 1.5rem;
+color: white;
+}
 
 
 

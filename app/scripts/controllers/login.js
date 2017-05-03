@@ -149,6 +149,7 @@ angular.module('zgF4App')
     	$("#del").click(function(){
     		var username = $('.username').val();
     		var password = $('.password').val();
+    		
     		if(username==''){
     			openNew();
     		}else if(password==''){
@@ -159,11 +160,12 @@ angular.module('zgF4App')
         			url:'http://192.168.43.116:3234/user/entry',
         			data:{
         				"username":username,
-        				"password":password
+        				"password":password,
+        				
         			},
         			success:function(e){
         				if(e.flag==1){
-        				
+        					localStorage.setItem('id',e.result[0].id)
         					localStorage.setItem('username',e.result[0].username);
         					localStorage.setItem('password',e.result[0].password); 
         					$state.go('shouye');

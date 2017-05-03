@@ -44,26 +44,13 @@ angular
   		templateUrl: 'views/html.html'
   	})
 	
+
  
-	$stateProvider.state("css",{
-  		url: '/css',
-  		templateUrl: 'views/css.html'
-  	})
-	
-	
-	$stateProvider.state("js",{
-  		url: '/js',
-  		templateUrl: 'views/js.html'
-  	})
-	
+
+
 
 	
-	$stateProvider.state("jq",{
-  		url: '/jq',
-  		templateUrl: 'views/jq.html'
-  	})
 
-	
 
 	
 	$stateProvider.state("sousuo",{
@@ -78,18 +65,26 @@ angular
 	
 
 
+
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
   	})
 	$stateProvider.state("grxg",{
-  		url: '/grxg',
+  		url:'/grxg',
   		templateUrl: 'views/grxg.html'
   	})
+
+	$urlRouterProvider.otherwise('/login');
+
 	
 	
 
+<<<<<<< HEAD
   	$urlRouterProvider.otherwise('/shouye');
+=======
+  	
+>>>>>>> origin/master
 
 	
 
@@ -97,6 +92,7 @@ angular
 	
 
  
+
 
 
 

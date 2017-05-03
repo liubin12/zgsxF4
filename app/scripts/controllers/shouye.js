@@ -111,8 +111,13 @@ console.log(data)
 
 		
 		$('.baba').click(function(){
+
+			var aa=$(this).attr("start")
+			
+
 			
 			var liu=$(this).attr("start1")
+
 			$('.baba').css('border-bottom','#9769ff')
 			$(this).css('border-bottom','3px solid #FFF')
 			
@@ -148,8 +153,14 @@ console.log(data)
 		})
 
     	$('.hedaPhoto').click(function(){
+
+    		$state.go("grxg");
+    	})
+    	
+    	
     		$state.go("mainm")
     	})
+
     	
     	$('.neirong1').delegate(".neirong","click",function(){
     		var id=$(this).attr("liu");
@@ -165,10 +176,17 @@ console.log(data)
     		
     		$state.go('mainm')
     	})
+<<<<<<< HEAD
     	$('#setout').click(function(){
     		localStorage.clear()
     		$state.go('login')
     	})
+=======
+
+    	scope.user=localStorage.username
+
+    	
+>>>>>>> origin/master
 
 	
 				
@@ -176,6 +194,7 @@ console.log(data)
 		
 			
 		scope.user=localStorage.username
+
 		
 		
     	

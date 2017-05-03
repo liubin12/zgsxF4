@@ -2,15 +2,19 @@ angular.module('zgF4App')
     .controller('mainm',['$scope','$state','$location',function(scope,$state,$location){
     	
 		var chakan=localStorage.chakan
-		var id=localStorage.liu
+		var xxid=localStorage.liu
+
 		console.log(chakan)
 		
+
+		var id=localStorage.xiang
+	alert(id)
 		$.ajax({
 			type: "get",
 			url: "http://192.168.43.116:3234/xiugai/chakan",
 			async: true,
 			data:{
-				id:id,
+				id:xxid,
 				chakan:chakan
 			},
 			success: function(data) {	 
@@ -27,7 +31,7 @@ angular.module('zgF4App')
 			url: "http://192.168.43.116:3234/xiugai/lisd",
 			async: true,
 			data:{		
-				id:id,
+				id:xxid,
 				
 			},
 			success: function(data) {
@@ -49,7 +53,7 @@ console.log(data[0].love)
 							url: "http://192.168.43.116:3234/xiugai/comt",
 							async: true,
 							data:{
-								'saver':id,
+								'saver':xxid,
 							},
 							success: function(e) {
 								console.log(e)
@@ -84,7 +88,7 @@ console.log(data[0].love)
 							url: "http://192.168.43.116:3234/xiugai/pinlun ",
 							async: true,
 							data:{
-								'saver':id,
+								'saver':xxid,
 								'niceng':niceng,
 								'pinlun':pinlun
 							},
@@ -111,7 +115,7 @@ console.log(data[0].love)
 					url: "http://192.168.43.116:3234/xiugai/aiqing",
 					async: true,
 					data:{
-						id:id,
+						id:xxid,
 						love:loveNum
 					},
 					success: function(data) {	 
