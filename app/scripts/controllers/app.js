@@ -64,6 +64,8 @@ angular
   		templateUrl: 'views/jq.html'
   	})
 
+
+
 	
 
 
@@ -80,14 +82,18 @@ angular
 	
 
 
+
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
   	})
 	$stateProvider.state("grxg",{
-  		url: '/grxg',
+  		url:'/grxg',
   		templateUrl: 'views/grxg.html'
   	})
+
+	$urlRouterProvider.otherwise('/login');
+
 	
 	
 
@@ -99,6 +105,7 @@ angular
 	
 
  
+
 
 
 
