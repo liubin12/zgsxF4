@@ -8,10 +8,31 @@ $("#lei>li").click(function(){
 		
 		})
 
+$("#shan").bind('click',function(){
+			$('#lishi').html("<p>暂无搜索历史</p>");
+			localStorage.his = "";
+		})
+	
+	
+	
+		
+		var His = localStorage.his;
+		if(His){
+			$('#lishi p').hide();
+			var jilv = His.split(',');
+			for(var i=0; i<jilv.length-1; i++){
+				$('#lishi').prepend('<span>'+ jilv[i] +'</span>');
+			}
+		}else{
+			$('#lishi').html('<p>暂无搜索历史</p>');
+		}	
+
+
+
 
 $("#right").click(function(){
 	if($('#sousuo').val() == ''){
-				$('#sousuo').val("请输入商品")
+				$('#sousuo').val("请输入搜索内容")
 			}else{
 			$.ajax({
 				type:"get",

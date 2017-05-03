@@ -108,6 +108,7 @@ img {
 }
 .box_ss {
   width: 16rem;
+ height: auto;
 }
 .box_ss > top {
   width: 16rem;

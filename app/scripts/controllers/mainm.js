@@ -3,6 +3,7 @@ angular.module('zgF4App')
     	
 		var chakan
 		var id=localStorage.liu
+		var id=localStorage.xiang
 	alert(id)
 		$.ajax({
 			type: "get",

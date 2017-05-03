@@ -46,23 +46,6 @@ angular
 	
 
  
-	$stateProvider.state("css",{
-  		url: '/css',
-  		templateUrl: 'views/css.html'
-  	})
-	
-	
-	$stateProvider.state("js",{
-  		url: '/js',
-  		templateUrl: 'views/js.html'
-  	})
-	
-
-	
-	$stateProvider.state("jq",{
-  		url: '/jq',
-  		templateUrl: 'views/jq.html'
-  	})
 
 
 
@@ -97,7 +80,7 @@ angular
 	
 	
 
-  	$urlRouterProvider.otherwise('/shouye2');
+  	
 
 	
 
