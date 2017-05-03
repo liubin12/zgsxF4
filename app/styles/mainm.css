@@ -123,3 +123,11 @@ body{
 	text-overflow: ellipsis;
 	white-space:nowrap;
 }
+.mainm .LZW_xiangxi{
+	width: 100%;
+}
+.mainm .LZW_chakan {
+    position: absolute;
+    right: 1.3rem;
+    top: 1.7rem;
+}

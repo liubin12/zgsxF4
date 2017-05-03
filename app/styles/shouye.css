@@ -138,7 +138,7 @@ background: #FFFFFF;
 	height: 3rem;
 	padding-top: 1rem;
 	margin-top:0rem;
-	
+	z-index: 99;
 }
 
 .shouye>#Neirong>.neirong1>.neirong{
@@ -663,6 +663,12 @@ body {
 	position: absolute;
 	right: 1.3rem;
 	top: 2.2rem;
+}
+#setout{
+	background: #FFFFFF;
+	color: #a668fd;
+	height: 2rem;
+	line-height: 2rem;
 }
 
 

@@ -90,14 +90,14 @@ window.onload = function(){
 			async: true,
 			data:{
 				'start':0,
-				'alla':1
+				'alla':0
 			},
 			success: function(data) {
 				
 				//console.log(data[1].love)
 				var html=''
 				for(var i = 0; i < data.length; i++) {
-					html+='<div class="neirong" liu="'+data[i].id+'"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love+'.png"/><img src="../images/LZW_take.png" style="width: 22px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">浏览:'+data[i].chakan+'</p></div></div></div>'
+					html+='<div class="neirong" liu="'+data[i].id+'"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love%2+'.png"/><img src="../images/LZW_take.png" style="width: 22px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">浏览:'+data[i].chakan+'</p></div></div></div>'
 			}
 
 console.log(data)
@@ -124,7 +124,7 @@ console.log(data)
 			async: true,
 			data:{
 				'start':liu,
-				'alla':1
+				'alla':0
 				
 			},
 			success: function(data) {
@@ -132,7 +132,7 @@ console.log(data)
 				//console.log(data[1].id)
 				var html=''
 				for(var i = 0; i < data.length; i++) {
-					html+='<div class="neirong" liu="'+data[i].id+'" id="1"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love+'.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">3363</p></div></div></div>'
+					html+='<div class="neirong" liu="'+data[i].id+'" id="1"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love%2+'.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">3363</p></div></div></div>'
 			}
 			
 console.log(data)
