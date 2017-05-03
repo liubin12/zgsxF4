@@ -29,6 +29,11 @@ angular
   		templateUrl: 'views/shouye.html'
   	})
   	
+  		$stateProvider.state("shouye2",{
+  		url: '/shouye2',
+  		templateUrl: 'views/shouye2.html'
+  	})
+  	
 	$stateProvider.state("shenhe",{
   		url: '/shenhe',
   		templateUrl: 'views/shenhe.html'
@@ -39,6 +44,29 @@ angular
   		templateUrl: 'views/html.html'
   	})
 	
+
+ 
+	$stateProvider.state("css",{
+  		url: '/css',
+  		templateUrl: 'views/css.html'
+  	})
+	
+	
+	$stateProvider.state("js",{
+  		url: '/js',
+  		templateUrl: 'views/js.html'
+  	})
+	
+
+	
+	$stateProvider.state("jq",{
+  		url: '/jq',
+  		templateUrl: 'views/jq.html'
+  	})
+
+	
+
+
 	
 	$stateProvider.state("sousuo",{
   		url: '/sousuo',
@@ -63,7 +91,7 @@ angular
 	
 	
 
-  	$urlRouterProvider.otherwise('/login');
+  	$urlRouterProvider.otherwise('/shouye2');
 
 	
 

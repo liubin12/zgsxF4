@@ -8,7 +8,7 @@
  * Controller of the sxpAppApp
  */
 angular.module('zgF4App')
-    .controller('shouye',['$scope','$state','$location',function(scope,$state,$location){
+    .controller('shouye2',['$scope','$state','$location',function(scope,$state,$location){
     var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
@@ -70,15 +70,15 @@ window.onload = function(){
 
  // var x = 20;
         //alert(isNaN(x)); //判断其是不是数字
-        function scroll() {
-
-           var title = document.title;
-
-           var fristchar = title.charAt(0); //在从中取第一个字符；(charAt)
-          var rightstr = title.substring(1, title.length); //结束位置必须是title.length;
-           document.title = rightstr + fristchar;
-        }
-        //setInterval("scroll()", 500); //每隔0.5秒就动一次;
+//      function scroll() {
+//
+//         var title = document.title;
+//
+//         var fristchar = title.charAt(0); //在从中取第一个字符；(charAt)
+//        var rightstr = title.substring(1, title.length); //结束位置必须是title.length;
+//         document.title = rightstr + fristchar;
+//      }
+//      setInterval("scroll()", 500); //每隔0.5秒就动一次;
 
 
 		
@@ -108,7 +108,7 @@ console.log(data)
 			}
 		})
 		
-
+	
 		
 		$('.baba').click(function(){
 			
@@ -129,7 +129,7 @@ console.log(data)
 			},
 			success: function(data) {
 				
-				console.log(data[0].id)
+				//console.log(data[1].id)
 				var html=''
 				for(var i = 0; i < data.length; i++) {
 					html+='<div class="neirong" liu="'+data[i].id+'" id="1"><div class="nr_1"><b>'+data[i].title+'</b> <b><img src="../images/LZW_love'+data[i].love+'.png"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">3363</p></div></div></div>'
@@ -161,8 +161,11 @@ console.log(data)
     		
     		$state.go('mainm')
     	})
-    	
-
+    	$('.push').click(function(){
+    		$state.go('shenhe')
+    	}
+    	)
+		
 	
 				
 			
