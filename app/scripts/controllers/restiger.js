@@ -145,7 +145,8 @@ angular.module('zgF4App')
  				"email":email,
  				"nick":nickname,
  				"tel":tel,
- 				"start":0
+ 				"start":0,
+ 				
  			},
  			success:function(e){
  				
