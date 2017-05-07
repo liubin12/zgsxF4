@@ -49,8 +49,15 @@ angular
   		url: '/sousuo',
   		templateUrl: 'views/sousuo.html'
   	})
+
 	
 
+
+
+	$stateProvider.state("searchResult",{
+  		url: '/searchResult',
+  		templateUrl: 'views/searchResult.html'
+  	})
 
 	$stateProvider.state("mainm",{
   		url: '/mainm',
@@ -64,6 +71,7 @@ angular
 	$urlRouterProvider.otherwise('/login');
 
 	
+
 
 
   }]);

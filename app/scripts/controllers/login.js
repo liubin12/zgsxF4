@@ -167,7 +167,8 @@ angular.module('zgF4App')
         				if(e.flag==1){
         					localStorage.setItem('id',e.result[0].id)
         					localStorage.setItem('username',e.result[0].username);
-        					localStorage.setItem('password',e.result[0].password); 
+        					localStorage.setItem('password',e.result[0].password);
+        					localStorage.setItem('nick',e.result[0].nick);
         					$state.go('shouye');
         				}else if(e.flag==2){
         					//alert('用户名不存在');

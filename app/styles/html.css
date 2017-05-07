@@ -74,7 +74,7 @@ body{
 	margin-left: 10rem;
 }
 
-#zhezhao{
+/*#zhezhao{
 	width: 12rem;
 	height: 1.5rem;
 	position: absolute;
@@ -85,12 +85,44 @@ display:none;
 text-align: center;
 line-height: 1.5rem;
 color: white;
+}*/
+
+
+
+
+#close{ 
+	background:url(../images/close.png) no-repeat;
+	width:30px; 
+	height:30px; 
+	cursor:pointer; 
+	position:absolute; 
+	right:5px; 
+	top:10px; 
+	text-indent:-999em;
+	}
+#mask{ 
+	background-color:#ccc;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index:1000;
+	}
+#login{ 
+	position:fixed;
+	z-index:1001;
+	}
+.loginCon{ 
+	position:relative; 
+	width:12rem;
+	height:7rem;
+	background: rgba(255,255,255,.7);
+	border-radius:0.125rem;
+	text-align:center;
+	line-height:7rem;
+	font-size:0.8rem;
 }
-
-
-
-
-
 
 
 
