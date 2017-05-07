@@ -57,7 +57,7 @@ angular.module('zgF4App')
     			document.body.appendChild(oMask);
     		var oLogin=document.createElement("div");
     			oLogin.id="login";
-    			oLogin.innerHTML="<div class='loginCon'>密码不能为空<div id='close'>&time</div></div>";
+    			oLogin.innerHTML="<div class='loginCon'>a<div id='close'>&time</div></div>";
     			document.body.appendChild(oLogin);
     		
     		//获取登陆框的宽和高

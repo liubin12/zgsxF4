@@ -80,11 +80,8 @@ angular
 	
 	
 
-<<<<<<< HEAD
-  	$urlRouterProvider.otherwise('/shouye');
-=======
-  	
->>>>>>> origin/master
+
+
 
 	
 
