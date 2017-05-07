@@ -5,7 +5,6 @@
 .Ygs_bg{
 	width:100%;
 	height:100%;
-	background:url(../images/y_bg.png);
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 	position:absolute;
@@ -42,12 +41,12 @@
 	z-index:4;
 }
 .Y_logo{
-	width:4.95rem;
-	height:4.95rem;
+	width:7.35rem;
+	height:3.975rem;
 	margin:0 auto;
-	background:url(../images/Y_yuan.png);
+	background:url(../images/logo.png);
 	background-size:100% 100%;
-	margin-top:3.4rem;
+	margin-top:3.625rem;
 }
 .Y_shuru{
 	width:100%;
@@ -65,7 +64,8 @@
 	overflow: hidden;
 	margin:0 auto;
 	border-radius:0.225rem;
-	background: rgba(255,255,255,.7);
+	background:white;
+	opacity: 0.8;
 	
 }
 
@@ -101,7 +101,8 @@
 	margin:0 auto;
 	border-radius:0.225rem;
 	margin-top:0.5rem;
-	background: rgba(255,255,255,.7);
+	background:white;
+	opacity: 0.8;
 }
 
 .Y_u_p{
@@ -131,7 +132,8 @@
 	margin:0 auto;
 	border-radius:0.225rem;
 	height:1.5rem;
-	background: rgba(255,255,255,.7);
+	background: white;
+	opacity: 0.8;
 	overflow: hidden;
 	margin-top:0.5rem;
 	
@@ -164,7 +166,8 @@
 	margin:0 auto;
 	border-radius:0.225rem;
 	height:1.5rem;
-	background: rgba(255,255,255,.7);
+	background: white;
+	opacity: 0.8;
 	overflow: hidden;
 	
 	margin-top:0.5rem;
@@ -196,7 +199,8 @@
 	margin:0 auto;
 	border-radius:0.225rem;
 	height:1.5rem;
-	background: rgba(255,255,255,.7);
+	background:white;
+	opacity: 0.8;
 	overflow: hidden;
 	
 	margin-top:0.5rem;
@@ -225,8 +229,8 @@
 	font-size:0.6rem;
 }
 #load{
-	width:13.125rem;
-	height:2.5rem;
+	width:10rem;
+	height:2.3rem;
 	margin:0 auto;
 	background:#064f82;
 	text-align: center;
@@ -234,7 +238,7 @@
 	font-size: 0.6rem;
 	font-weight: bold;
 	color:white;
-	line-height:2.5rem;
+	line-height:2.3rem;
 	border-radius:0.155rem;
 	margin-top:1rem;
 	border:0;
