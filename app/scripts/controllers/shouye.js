@@ -158,8 +158,7 @@ console.log(data)
     	})
     	
     	
-    		$state.go("mainm")
-    	})
+    		
 
     	
     	$('.neirong1').delegate(".neirong","click",function(){
@@ -176,17 +175,17 @@ console.log(data)
     		
     		$state.go('mainm')
     	})
-<<<<<<< HEAD
+
     	$('#setout').click(function(){
     		localStorage.clear()
     		$state.go('login')
     	})
-=======
+
 
     	scope.user=localStorage.username
 
     	
->>>>>>> origin/master
+
 
 	
 				

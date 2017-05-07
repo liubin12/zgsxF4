@@ -15,7 +15,7 @@
 		
 	</div>
 	<div class="Y_tou">
-		<div class="image"><img class="addImg" src="images/Y_su.jpg" /></div>
+		<div class="image"></div>
 		<div class="img_add">
 			<input type="file" id="file"/>
 			<div class="boxx">
@@ -26,27 +26,27 @@
 	</div>
 	<p class="Y_Xm">
 		<span>姓名</span>
-		<input type="text" id="xingming" class="username"/>
+		<input type="text" id="xingming" class="username" ng-model="username"/>
 		<a href="javscript:;"><img src="images/Y_jianTou.jpg" alt=""></a>
 	</p>
 	<p class="Y_mm">
 		<span>密码</span>
-		<input type="password" id="mima"/>
+		<input type="password" id="mima" ng-model="password"/>
 		<a href="javscript:;"><img src="images/Y_jianTou.jpg" alt=""></a>
 	</p>
 	<p class="Y_ea">
 		<span>邮箱</span>
-		<input type="text" id="youxiang"/>
+		<input type="text" id="youxiang" ng-model="email"/>
 		<a href="javscript:;"><img src="images/Y_jianTou.jpg" alt=""></a>
 	</p>
 	<p class="Y_tel">
 		<span>手机</span>
-		<input type="text" id="shouji"/>
+		<input type="text" id="shouji" ng-model="tel"/>
 		<a href="javscript:;"><img src="images/Y_jianTou.jpg" alt=""></a>
 	</p>
 	<p class="Y_nicks">
 		<span>昵称</span>
-		<input type="text" id="nicheng"/>
+		<input type="text" id="nicheng" ng-model="nicheng"/>
 		<a href="javscript:;"><img src="images/Y_jianTou.jpg" alt=""></a>
 	</p>
 	<button id="update">修改</button>
