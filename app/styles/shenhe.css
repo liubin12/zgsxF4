@@ -10,7 +10,7 @@ body{
 .wxbox{
 	width: 16rem;	
 	margin: 0 auto;
-	height: auto;
+	
 }
 
 .wxtop{
@@ -68,6 +68,11 @@ body{
 	font-size: 1.3rem;
 	font-weight: bold;
 	line-height: 4rem;
+}
+.wxshnr_box{
+	width: 16rem;
+	height: auto;
+	
 }
 .wxshnr{
 	width: 16rem;
@@ -129,16 +134,16 @@ body{
 	display: none;
 }
 .wxqq a{
-	width: 1.8rem;
-	height: 3rem;
-	
+	width: 2.7rem;
+	height: 3rem;	
 	border:0;	
 	padding:0;	
 	text-align: center;
 	float: left;
-	background: blue;
+	background: blueviolet;
+	color: white;
 	line-height: 2.7rem;
-	/*margin-top: 0.1rem;*/
+	font-size: 0.5rem;
 	margin-top: 0.3rem;
 	cursor: pointer;
 }
@@ -157,7 +162,39 @@ body{
 
 
 
-
+#close{ 
+	background:url(../images/close.png) no-repeat;
+	width:30px; 
+	height:30px; 
+	cursor:pointer; 
+	position:absolute; 
+	right:5px; 
+	top:10px; 
+	text-indent:-999em;
+	}
+#mask{ 
+	background-color:#ccc;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index:1000;
+	}
+#login{ 
+	position:fixed;
+	z-index:1001;
+	}
+.loginCon{ 
+	position:relative; 
+	width:12rem;
+	height:7rem;
+	background: rgba(255,255,255,.7);
+	border-radius:0.125rem;
+	text-align:center;
+	line-height:7rem;
+	font-size:0.8rem;
+}
 
 
 

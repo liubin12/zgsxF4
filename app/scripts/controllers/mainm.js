@@ -4,16 +4,22 @@ angular.module('zgF4App')
 		var chakan=localStorage.chakan
 		var xxid=localStorage.liu
 
-		console.log(chakan)
+		//console.log(chakan)
 		
 
+<<<<<<< HEAD
+		var xiang=localStorage.xiang
+		console.log(xiang)
+	alert(xiang)
+=======
 		var id=localStorage.xiang
-	alert(id)
+>>>>>>> origin/master
 		$.ajax({
 			type: "get",
 			url: "http://192.168.43.116:3234/xiugai/chakan",
 			async: true,
 			data:{
+				
 				id:xxid,
 				chakan:chakan
 			},
@@ -42,7 +48,7 @@ angular.module('zgF4App')
 					html+='<div class="neirong" aa=""  chakanNum="'+data[i].chakan+'"><div class="nr_1"><b>'+data[0].title+'</b><b class="img"><img src="../images/LZW_love'+data[0].love%2+'.png" class="loveImg"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">浏览:'+data[i].chakan+'</p><p class="LZW_xiangxi"><b style="display:inline-block;width: 100%;height: auto;background: #FFFFFF;" class="saver"></b></p><p class="LZW_xiangxi"><textarea class="textarea" style="height: 3rem; width: 100%;border: 0;padding-left: 0.2rem; " placeholder="评论"></textarea></p><p style="text-align: center;"  id="pushpl">发表</p></div></div>'
 			}
 
-console.log(data[0].love)
+//console.log(data[0].love)
 				$('.neirong1').append(html);
 				//浏览量
 				
@@ -79,7 +85,7 @@ console.log(data[0].love)
 				var nicheng=localStorage.nick
 				var pinlun=$('.textarea').val()
 				if(pinlun==''){
-					alert('不要为空')
+					 openNew('#f90','不要为空')
 					return
 				}else{
 				console.log(pinlun)
@@ -95,10 +101,11 @@ console.log(data[0].love)
 							success: function(e) {
 								console.log(e)
 								if(e.flag==1){
-							alert("发表成功")
+							 openNew('#fff',"发表成功")
 							window.location.reload()
+							//$(".neirong").load(location.href+" .neirong"); 
 							}else{
-								alert("失败")
+								 openNew('#f90',"失败")
 								}
 							},
 							error:function(){
@@ -128,6 +135,41 @@ console.log(data[0].love)
 					}
 				})
 				})
+			//遮罩层
+		function openNew(b,a){
+    		//获取页面的高度和宽度
+    		var sWidth=document.body.scrollWidth;
+    		var sHeight=document.body.scrollHeight;
+    		
+    		//获取页面的可视区域高度和宽度
+    		var wHeight=document.documentElement.clientHeight;
+    		
+    		var oMask=document.createElement("div");
+    			oMask.id="mask";
+    			oMask.style.height=sHeight+"px";
+    			oMask.style.width=sWidth+"px";
+    			document.body.appendChild(oMask);
+    		var oLogin=document.createElement("div");
+    			oLogin.id="login";
+    			oLogin.innerHTML="<div class='loginCon' style='color:"+b+"'>"+a+"<div id='close'>&time</div></div>";
+    			document.body.appendChild(oLogin);
+    		
+    		//获取登陆框的宽和高
+    		var dHeight=oLogin.offsetHeight;
+    		var dWidth=oLogin.offsetWidth;
+    			//设置登陆框的left和top
+    			oLogin.style.left=sWidth/2-dWidth/2+"px";
+    			oLogin.style.top=wHeight/2-dHeight/2+"px";
+    		//点击关闭按钮
+    		var oClose=document.getElementById("close");
+    		
+    			//点击登陆框以外的区域也可以关闭登陆框
+    			oClose.onclick=oMask.onclick=function(){
+    						document.body.removeChild(oLogin);
+    						document.body.removeChild(oMask);
+    			};
+    	};
+
 			$('.mainm .main').click(function(){
 				window.history.back()
 			})
