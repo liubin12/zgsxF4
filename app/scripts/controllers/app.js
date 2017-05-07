@@ -61,11 +61,6 @@ angular
   		url: '/searchResult',
   		templateUrl: 'views/searchResult.html'
   	})
-	
-	
-
-
-
 	$stateProvider.state("mainm",{
   		url: '/mainm',
   		templateUrl: 'views/mainm.html'
@@ -82,11 +77,8 @@ angular
 
 
 
+  
 
-	
-
-	
-	
 
  
 

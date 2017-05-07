@@ -154,9 +154,17 @@ console.log(data)
 		})
 
     	$('.hedaPhoto').click(function(){
+
 	
     		$state.go("grxg")
     	})
+
+
+    		$state.go("grxg");
+    	})
+    	
+    	
+
 
     	
     	$('.neirong1').delegate(".neirong","click",function(){
@@ -179,6 +187,7 @@ console.log(data)
   		localStorage.clear()
  		$state.go('login')
     	})
+
 
 		//遮罩层
 		function openNew(a){
@@ -216,7 +225,9 @@ console.log(data)
     	};
 
     	
+
 		scope.img=LocalStorage.imgg
+
 				
 			
 		
