@@ -196,7 +196,10 @@ angular.module('zgF4App')
 			}
 		})
 	})*/
-
+	$('#fanhui').click(function(){
+		//alert();
+		window.history.back();
+	})
 	
 	
 	
