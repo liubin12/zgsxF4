@@ -239,12 +239,28 @@ console.log(data)
     	
 
 
+		if(localStorage.imgg){
+		
 		scope.img=localStorage.imgg
 		scope.html=''	
 		scope.html+='<img src="http://192.168.43.116:3234/upload/'+scope.img+'"/>'	
 		$('.hedaPhoto').append(scope.html)
-		
+				
+	}else{
+		$('.hedaPhoto').append('<img src="../images/LZW_bj2.png" />')
+	}
 			
+
+$('#fabu').click(function(){
+    		
+  		
+ 		$state.go('html')
+    	})
+$('#sousuo').click(function(){
+    		
+  		
+ 		$state.go('sousuo')
+    	})
 
 		scope.user=localStorage.username
 		var  id=localStorage.id

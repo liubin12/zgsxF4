@@ -16,7 +16,7 @@ angular.module('zgF4App')
 
 		var xiang=localStorage.xiang
 		console.log(xiang)
-	alert(xiang)
+	
 
 		var id=localStorage.xiang
 
