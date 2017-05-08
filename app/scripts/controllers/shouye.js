@@ -9,6 +9,14 @@
  */
 angular.module('zgF4App')
     .controller('shouye',['$scope','$state','$location',function(scope,$state,$location){
+    	
+    	if(localStorage.start!=0){
+			
+			$location.url("/login");
+			
+			 
+			
+		}else{}
     var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
@@ -112,11 +120,11 @@ console.log(data)
 		
 		$('.baba').click(function(){
 
-<<<<<<< HEAD
+
 			//var aa=$(this).attr("start")
-=======
+
 		//	var aa=$(this).attr("start")
->>>>>>> origin/master
+
 			
 
 			
@@ -159,17 +167,12 @@ console.log(data)
 
     	$('.hedaPhoto').click(function(){
 
-<<<<<<< HEAD
-    		
-=======
+
 	
     		$state.go("grxg")
     	})
 
 
-    		$state.go("grxg");
-    	})
->>>>>>> origin/master
     	
     	
 
@@ -195,10 +198,7 @@ console.log(data)
   		localStorage.clear()
  		$state.go('login')
     	})
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 
 
 		//遮罩层
@@ -237,24 +237,34 @@ console.log(data)
     	};
 
     	
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 
-		scope.img=LocalStorage.imgg
-
-				
-			
+		if(localStorage.imgg){
 		
+		scope.img=localStorage.imgg
+		scope.html=''	
+		scope.html+='<img src="http://192.168.43.116:3234/upload/'+scope.img+'"/>'	
+		$('.hedaPhoto').append(scope.html)
+				
+	}else{
+		$('.hedaPhoto').append('<img src="../images/LZW_bj2.png" />')
+	}
 			
-<<<<<<< HEAD
-	
 
-=======
+$('#fabu').click(function(){
+    		
+  		
+ 		$state.go('html')
+    	})
+$('#sousuo').click(function(){
+    		
+  		
+ 		$state.go('sousuo')
+    	})
+
 		scope.user=localStorage.username
 		var  id=localStorage.id
->>>>>>> origin/master
+
 		
 		
     	

@@ -9,6 +9,15 @@
  */
 angular.module('zgF4App')
     .controller('shouye2',['$scope','$state','$location',function(scope,$state,$location){
+    	
+    	
+    	if(localStorage.start!=1){
+			
+			$location.url("/login");
+			
+			 
+			
+		}else{}
     var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
@@ -148,7 +157,7 @@ console.log(data)
 		})
 
     	$('.hedaPhoto').click(function(){
-    		$state.go("mainm")
+    		$state.go("grxg")
     	})
     	
     	$('.neirong1').delegate(".neirong","click",function(){
@@ -165,9 +174,28 @@ console.log(data)
     		$state.go('shenhe')
     	}
     	)
+    		$('#setout1').click(function(){
+    		
+  		localStorage.clear()
+ 		$state.go('login')
+    	})
 		
 	
+		if(localStorage.imgg){
+		
+		scope.img=localStorage.imgg
+		scope.html=''	
+		scope.html+='<img src="http://192.168.43.116:3234/upload/'+scope.img+'"/>'	
+		$('.hedaPhoto').append(scope.html)
 				
+	}else{
+		$('.hedaPhoto').append('<img src="../images/LZW_bj2.png" />')
+	}
+	$('#push1').click(function(){
+    		$state.go("sousuo")
+    	})
+			
+		
 			
 		
 			

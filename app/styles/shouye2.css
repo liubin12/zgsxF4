@@ -697,5 +697,16 @@ body {
 	line-height:7rem;
 	font-size:0.8rem;
 }
+#setout1{
+	background: #FFFFFF;
+	color: #a668fd;
+	height: 2rem;
+	line-height: 2rem;
+}
+.hedaPhoto>img{
+	width: 5rem;
+	height: 5rem;
+	border: .0;
+}
 
 
