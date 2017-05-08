@@ -180,9 +180,7 @@ angular.module('zgF4App')
         					localStorage.setItem('start',e.result[0].start);
         					localStorage.setItem('imageTou',localStorage.imgg);
 
-        						if(localStorage.start==0){
-        							$state.go('shouye');
-        						}else if(localStorage.start==1){
+        						
 
         						if(localStorage.start==1){
 
