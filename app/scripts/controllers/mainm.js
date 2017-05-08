@@ -13,13 +13,13 @@ angular.module('zgF4App')
 		//console.log(chakan)
 		
 
-<<<<<<< HEAD
+
 		var xiang=localStorage.xiang
 		console.log(xiang)
 	alert(xiang)
-=======
+
 		var id=localStorage.xiang
->>>>>>> origin/master
+
 		$.ajax({
 			type: "get",
 			url: "http://192.168.43.116:3234/xiugai/chakan",
