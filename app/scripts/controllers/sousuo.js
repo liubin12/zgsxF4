@@ -14,7 +14,10 @@ $("#shan").bind('click',function(){
 		})
 	
 	
-	
+	$("#aaaaa").click(function(){
+	window.history.back()
+		
+	})
 		
 		var His = localStorage.his;
 		if(His){

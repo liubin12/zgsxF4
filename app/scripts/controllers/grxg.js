@@ -95,7 +95,6 @@ angular.module('zgF4App')
 					contentType: false,
 					processData: false,
 					success: function(data) {
-						
 						console.log(data)
 						$scope.img = data.fName;
 						localStorage.imgg = $scope.img;
@@ -128,7 +127,7 @@ angular.module('zgF4App')
 					 success:function(e){
 						 if(e.flag==1){
 							 openNew('成功');
-							 window.location.reload; 
+							 
 						 }else if(e.flag==2){
 							 openNew('失败'); 
 						 }

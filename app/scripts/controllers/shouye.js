@@ -120,7 +120,11 @@ console.log(data)
 		
 		$('.baba').click(function(){
 
+
+			//var aa=$(this).attr("start")
+
 		//	var aa=$(this).attr("start")
+
 			
 
 			
@@ -163,12 +167,12 @@ console.log(data)
 
     	$('.hedaPhoto').click(function(){
 
+
 	
     		$state.go("grxg")
     	})
 
 
-    	
     	
     	
 
@@ -194,6 +198,7 @@ console.log(data)
   		localStorage.clear()
  		$state.go('login')
     	})
+
 
 
 		//遮罩层
@@ -233,14 +238,17 @@ console.log(data)
 
     	
 
+
 		scope.img=localStorage.imgg
 		scope.html=''	
 		scope.html+='<img src="http://192.168.43.116:3234/upload/'+scope.img+'"/>'	
 		$('.hedaPhoto').append(scope.html)
 		
 			
+
 		scope.user=localStorage.username
 		var  id=localStorage.id
+
 		
 		
     	

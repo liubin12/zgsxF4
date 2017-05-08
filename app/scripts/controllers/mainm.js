@@ -10,15 +10,22 @@ angular.module('zgF4App')
 		var chakan=localStorage.chakan
 		var xxid=localStorage.liu
 
-		console.log(chakan)
+		//console.log(chakan)
 		
 
+<<<<<<< HEAD
+		var xiang=localStorage.xiang
+		console.log(xiang)
+	alert(xiang)
+=======
 		var id=localStorage.xiang
+>>>>>>> origin/master
 		$.ajax({
 			type: "get",
 			url: "http://192.168.43.116:3234/xiugai/chakan",
 			async: true,
 			data:{
+				
 				id:xxid,
 				chakan:chakan
 			},
@@ -47,7 +54,7 @@ angular.module('zgF4App')
 					html+='<div class="neirong" aa=""  chakanNum="'+data[i].chakan+'"><div class="nr_1"><b>'+data[0].title+'</b><b class="img"><img src="../images/LZW_love'+data[0].love%2+'.png" class="loveImg"/><img src="../images/LZW_take.png" style="width: 24px;"/></b><p class="LZW_xiangxi">'+data[i].content+'</p><p class="LZW_chakan">浏览:'+data[i].chakan+'</p><p class="LZW_xiangxi"><b style="display:inline-block;width: 100%;height: auto;background: #FFFFFF;" class="saver"></b></p><p class="LZW_xiangxi"><textarea class="textarea" style="height: 3rem; width: 100%;border: 0;padding-left: 0.2rem; " placeholder="评论"></textarea></p><p style="text-align: center;"  id="pushpl">发表</p></div></div>'
 			}
 
-console.log(data[0].love)
+//console.log(data[0].love)
 				$('.neirong1').append(html);
 				//浏览量
 				

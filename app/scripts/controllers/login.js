@@ -170,6 +170,7 @@ angular.module('zgF4App')
         			success:function(e){
         				if(e.flag==1){
         					console.log(e)
+        					
         					localStorage.setItem('id',e.result[0].id)
         					localStorage.setItem('username',e.result[0].username);
         					localStorage.setItem('password',e.result[0].password);
@@ -178,12 +179,17 @@ angular.module('zgF4App')
         					localStorage.setItem('tel',e.result[0].tel);
         					localStorage.setItem('start',e.result[0].start);
         					localStorage.setItem('imageTou',localStorage.imgg);
+
         						if(localStorage.start==0){
         							$state.go('shouye');
         						}else if(localStorage.start==1){
+
+        						if(localStorage.start==1){
+
         							$state.go('shouye2');
+        						}else if(localStorage.start==0){
+        							$state.go('shouye');
         						}
-        					$state.go('shouye');
         				}else if(e.flag==2){
         					//alert('用户名不存在');
         					openNew('用户名不存在');
