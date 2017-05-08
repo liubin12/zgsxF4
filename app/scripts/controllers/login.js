@@ -178,9 +178,9 @@ angular.module('zgF4App')
         					localStorage.setItem('tel',e.result[0].tel);
         					localStorage.setItem('start',e.result[0].start);
         					localStorage.setItem('imageTou',localStorage.imgg);
-        						if(localStorage.start==1){
+        						if(localStorage.start==0){
         							$state.go('shouye');
-        						}else if(localStorage.start==0){
+        						}else if(localStorage.start==1){
         							$state.go('shouye2');
         						}
         					$state.go('shouye');

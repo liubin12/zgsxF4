@@ -1,6 +1,12 @@
 angular.module('zgF4App')
     .controller('mainm',['$scope','$state','$location',function(scope,$state,$location){
-    	
+    	if(!localStorage.start){
+			
+			$location.url("/login");
+			
+			 
+			
+		}else{}
 		var chakan=localStorage.chakan
 		var xxid=localStorage.liu
 

@@ -9,6 +9,14 @@
  */
 angular.module('zgF4App')
     .controller('shouye',['$scope','$state','$location',function(scope,$state,$location){
+    	
+    	if(localStorage.start!=0){
+			
+			$location.url("/login");
+			
+			 
+			
+		}else{}
     var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
@@ -160,8 +168,7 @@ console.log(data)
     	})
 
 
-    		$state.go("grxg");
-    	})
+    	
     	
     	
 
@@ -226,10 +233,10 @@ console.log(data)
 
     	
 
-		scope.img=LocalStorage.imgg
-
-				
-			
+		scope.img=localStorage.imgg
+		scope.html=''	
+		scope.html+='<img src="http://192.168.43.116:3234/upload/'+scope.img+'"/>'	
+		$('.hedaPhoto').append(scope.html)
 		
 			
 		scope.user=localStorage.username

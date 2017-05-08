@@ -9,6 +9,15 @@
  */
 angular.module('zgF4App')
     .controller('shouye2',['$scope','$state','$location',function(scope,$state,$location){
+    	
+    	
+    	if(localStorage.start!=1){
+			
+			$location.url("/login");
+			
+			 
+			
+		}else{}
     var oDiv = document.getElementsByClassName('ul2')[0];
    var divT = oDiv.offsetTop;
    //console.log(divT);
